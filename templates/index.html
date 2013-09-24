@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{%block title%} Home {%endblock title%}
+
+{% block precontent %}
+
+ <div class="jumbotron">
+  <div class="container">
+    <h1>Welcome to Shortly!</h1>
+    <p>
+    Add a long URL, get a short one back.
+    </p>
+  </div>
+</div>
+
+{% endblock precontent %}
+
+
+{% block content %}
+<form class="form-inline" role="form">
+    <div class="form-group col-sm-10">
+        <input type="url" class="form-control" id="url" placeholder="Enter your URL">
+    </div>
+    <div class="form-group">
+    <a class="btn btn-primary ">Get shortcut!</a>
+    </div>
+</form>
+
+{% endblock content %}
